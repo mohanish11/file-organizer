@@ -1,15 +1,11 @@
 #!/usr/bin/env node
-let inputarr=process.argv.slice(2);//taking input
+let inputarr=process.argv.slice(2);
 const { dir } = require("console");
 let fs=require("fs");
 let path=require("path");
 let helpObj=require("./commands/help");
 let treeObj=require("./commands/tree");
 let organizeObj=require("./commands/organize");
-//console.log(inputarr);
-// node main.js tree "directoryPath"
-// node main.js organize "directoryPath"
-//node main.js help
 let command=inputarr[0];
 let types = {
     media: ["mp4", "mkv"],
